@@ -320,7 +320,7 @@ section{
 }
 .input i{
     position: absolute;
-    font-size: 4rem;
+    font-size: 3rem;
     top: 50%;
     left: 10px;
     transform: translate(50%,-50%);
@@ -362,6 +362,10 @@ footer ul li a{
         padding: 1rem 1rem;        
     }
 
+    .info-box span{
+        font-size: 1.5rem;
+    }
+
     header .logo{
         font-size: 1rem;
     }
@@ -369,17 +373,17 @@ footer ul li a{
         gap: 1rem;
     }
     .info-box h3{
-        font-size: 1.2rem;
+        font-size: 2rem;
     }
     .info-box h1{
-        font-size: 1.2rem;
+        font-size: 2.5rem;
     }
 
     .about .about-container{
         gap: 1rem;
     }
     .about img{
-        width: 20vw;
+        width: 30vw;
         border-radius: 10%;
     }
     .experience-info{
@@ -387,14 +391,14 @@ footer ul li a{
     }
     .input-box input{
         padding: 2rem 5rem;
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     .input input::placeholder{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
 
     }
     .input-box i{
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -424,10 +428,10 @@ footer ul li a{
     }
     .input-box input{
         padding: 1rem 2rem;
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
     .input-box input::placeholder{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
     .input-box i{
         display: none;
@@ -474,7 +478,7 @@ footer ul li a{
         font-size: 1.5rem;
     }
     .about-container img{
-        width: 80vw;
+        width: 50vw;
     }
     .input-box input{
         padding: 0.5rem 3rem;
