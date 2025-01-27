@@ -3,197 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swap's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Swapnaneel Ghosh - Experienced Automation Engineer specializing in Playwright, Selenium, Cypress, and Appium">
+    <meta name="keywords" content="automation engineer, playwright, selenium, cypress, appium, test automation">
+    <meta name="author" content="Swapnaneel Ghosh">
+    <title>Swapnaneel Ghosh | Automation Engineer</title>
+    
+    <!-- Preload critical assets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">
-            <span>Swapnaneel Ghosh</span>
-        </a>
-        <ul class="nav-links">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-
-        <button class="visit-btn">Visit Github</button>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                Swapnaneel Ghosh
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <section id="about" class="about">
-        <div class="about-container">
-            <img src="images/dp.jpg" alt="Swapnaneel Ghosh">
-
-            <div class="info-box">
-
-                <div class="text">
-                    <h3>Hi, I'm</h3>
-                    <h1>Swapnaneel Ghosh</h1>
-                    <span>Automation Engineer</span>
+        <div class="container">
+            <div class="about-content">
+                <div class="profile-image">
+                    <img src="/api/placeholder/400/400" alt="Swapnaneel Ghosh" class="profile-picture">
                 </div>
-
-                <div class="btn-group">
-                    <div class="btn">Download CV</div>
-                    <div class="btn">Contact Me</div>
+                <div class="about-text animate">
+                    <h1>Hi, I'm Swapnaneel Ghosh</h1>
+                    <p class="title">Senior Automation Engineer</p>
+                    <p>With over 4 years of experience in test automation, I specialize in building robust and scalable automation frameworks using cutting-edge technologies. My expertise spans across web, mobile, and API testing, helping teams deliver high-quality software efficiently.</p>
+                    <div class="btn-group">
+                        <a href="cv.pdf" class="btn" download>
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="#contact" class="btn">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
                 </div>
-
-                <div class="socials">
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-github"></i>
-                </div>
-
             </div>
         </div>
     </section>
 
     <section id="experience" class="experience">
-
-        <h2 class="section-title">Experience</h2>
-
-        <div class="experience-info">
-            <div class="grid">
-
-                <div class="grid-card">
-                    <i class="fa-brands fa-python"></i>
-                    <span>Playwright Python</span>
-                    <h3>2 Years</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eaque!</p>
+        <div class="container">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="experience-grid">
+                <div class="experience-card animate">
+                    <i class="fab fa-python"></i>
+                    <h3>Playwright Python</h3>
+                    <p>Advanced expertise in end-to-end automation using Playwright with Python. Specialized in creating maintainable and efficient test frameworks.</p>
                 </div>
-
-                <div class="grid-card">
-                    <i class="fa-brands fa-java"></i>
-                    <span>Selenium Java</span>
-                    <h3>2 Years</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eaque!</p>
+                <div class="experience-card animate">
+                    <i class="fab fa-java"></i>
+                    <h3>Selenium Java</h3>
+                    <p>Extensive experience with Selenium WebDriver and Java, implementing Page Object Model and data-driven testing approaches.</p>
                 </div>
-
-                <div class="grid-card">
-                    <i class="fa-brands fa-js"></i>
-                    <span>Cypress JavaScript</span>
-                    <h3>2 Years</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eaque!</p>
+                <div class="experience-card animate">
+                    <i class="fab fa-js"></i>
+                    <h3>Cypress JavaScript</h3>
+                    <p>Expert in modern web testing using Cypress, implementing CI/CD pipelines and creating comprehensive test coverage.</p>
                 </div>
-
-                <div class="grid-card">
-                    <i class="fa-brands fa-java"></i>
-                    <span>Appium Java</span>
-                    <h3>2 Years</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eaque!</p>
+                <div class="experience-card animate">
+                    <i class="fab fa-appium"></i>
+                    <h3>Appium</h3>
+                    <p>Experience in mobile automation with Appium, creating cross-platform tests for Android and iOS apps, and integrating them into CI/CD pipelines.</p>
                 </div>
-
             </div>
-
-            <img src="images/dp.jpg" alt="">
-
         </div>
     </section>
 
     <section id="projects" class="projects">
-        
-        <h2 class="section-title">
-            Recent Projects
-        </h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="images/Playwright.png" alt="">
-                <h3>Project X</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, rerum.</p>
-                <div class="btn-group">
-                    <div class="btn">Github Repo</div>
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card animate">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="Project 1">
+                    </div>
+                    <div class="project-content">
+                        <h3>Test Automation Framework</h3>
+                        <p>A robust and scalable test automation framework using Playwright and Python, designed to support web and API testing.</p>
+                    </div>
+                </div>
+                <div class="project-card animate">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="Project 2">
+                    </div>
+                    <div class="project-content">
+                        <h3>Mobile Testing with Appium</h3>
+                        <p>A cross-platform mobile testing framework for Android and iOS apps using Appium, integrated with Jenkins for continuous testing.</p>
+                    </div>
+                </div>
+                <div class="project-card animate">
+                    <div class="project-image">
+                        <img src="/api/placeholder/600/400" alt="Project 3">
+                    </div>
+                    <div class="project-content">
+                        <h3>CI/CD with Cypress</h3>
+                        <p>Setting up CI/CD pipelines for automated testing using Cypress, ensuring quick feedback cycles and high-quality releases.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="project-card">
-                <img src="images/Selenium_Logo.png" alt="">
-                <h3>Project Y</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, rerum.</p>
-                <div class="btn-group">
-                    <div class="btn">Github Repo</div>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <img src="images/Appium.png" alt="">
-                <h3>Project Z</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, rerum.</p>
-                <div class="btn-group">
-                    <div class="btn">Github Repo</div>
-                </div>
-            </div>
-
         </div>
-
     </section>
-
 
     <section id="contact" class="contact">
-
-        <div class="input-box">
-            <h2 class="section-title">
-                Contact Me
-            </h2>
-            <div class="input">
-                <input type="text" placeholder="exmpl@gmail.com">
-                <i class="fa-solid fa-envelope"></i>
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
             </div>
-
-            <div class="btn">
-                Submit
-            </div>
-
-
         </div>
-
     </section>
 
-
-    <footer>
-        <ul>
-            <li>
-                <a href="#about">
-                    About
-                </a>
-            </li>
-            <li>
-                <a href="#experience">
-                    Experience
-                </a>
-            </li>
-            <li>
-                <a href="#projects">
-                    Projects
-                </a>
-            </li>
-            <li>
-                <a href="#contact">
-                    Contact
-                </a>
-            </li>
-        </ul>
-
-        <p class="copyright">
-            &copy; All Rights Reserved | Swapnaneel Ghosh
-        </p>
-
-
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About</h3>
+                    <p>I'm an experienced Automation Engineer with a focus on creating efficient test automation frameworks and ensuring high-quality software through testing.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: <a href="mailto:swapnaneel.ghosh@example.com">swapnaneel.ghosh@example.com</a></p>
+                    <p>Phone: +123 456 7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Me</h3>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/swapnaneelghosh" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/swapnaneelghosh" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Swapnaneel Ghosh. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-
-
 
     <script src="script.js"></script>
 </body>
