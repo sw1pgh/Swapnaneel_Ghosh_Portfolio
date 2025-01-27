@@ -15,6 +15,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Scrollbar styling */
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
@@ -31,22 +32,27 @@ body {
     margin: 0 auto;
 }
 
-/* Enhanced Header */
+/* Enhanced Header with Glassmorphism Effect */
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: rgba(33, 37, 41, 0.95);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1); /* Lighter, semi-transparent background */
+    backdrop-filter: blur(15px); /* Increased blur for stronger glass effect */
     padding: 1.5rem;
     z-index: 1000;
     transition: var(--transition);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow to enhance the glass look */
+    backdrop-filter: blur(15px) saturate(150%); /* Add saturation for color pop */
 }
 
 .header.scrolled {
     padding: 1rem; /* Reduced padding on scroll */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.2); /* Darker background on scroll */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow on scroll */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Slightly darker border on scroll */
 }
 
 .nav-container {
@@ -62,7 +68,7 @@ body {
 .logo {
     font-size: 1.2rem;
     font-weight: 700;
-    color: white;
+    color: black;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -81,7 +87,7 @@ body {
 }
 
 .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -110,45 +116,46 @@ body {
 
 /* Enhanced About Section */
 .about {
-    padding: 8rem 0 4rem;
+    padding: 6rem 0 4rem; /* Reduced padding for a tighter section */
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
 }
 
 .about-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 3rem; /* Reduced gap to bring elements closer */
     align-items: center;
 }
 
 .profile-picture {
     width: 100%;
-    max-width: 400px;
+    max-width: 350px; /* Reduced the maximum width of the profile picture */
     height: auto;
     border-radius: 1rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
+    margin-top: 3.5rem;
 }
 
 .profile-picture:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px); /* Slightly reduced hover effect */
 }
 
 .about-text h1 {
-    font-size: clamp(2rem, 5vw, 3rem);
+    font-size: clamp(1.8rem, 5vw, 2.6rem); /* Reduced font size */
     margin-bottom: 1rem;
     line-height: 1.2;
 }
 
 .about-text .title {
     color: var(--primary-color);
-    font-size: 1.25rem;
+    font-size: 1.15rem; /* Reduced font size */
     margin-bottom: 1.5rem;
 }
 
 .about-text p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    margin-bottom: 1.5rem; /* Reduced margin for better compactness */
+    font-size: 1rem; /* Reduced font size */
     color: #666;
 }
 
@@ -275,8 +282,8 @@ body {
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
-    background: white;
     padding: 2rem;
+    background: #f8f9fa;
     border-radius: 1rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
@@ -356,7 +363,7 @@ body {
 }
 
 .social-links a {
-    color: var(--primary-color);
+    color: black;
     font-size: 1.5rem;
     transition: var(--transition);
 }
@@ -371,6 +378,7 @@ body {
     background: var(--bg-dark);
     color: white;
     padding: 4rem 0 2rem;
+    font-family: 'Arial', sans-serif; /* Add a more modern font */
 }
 
 .footer-content {
@@ -378,11 +386,14 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
+    justify-items: end
 }
 
 .footer-section h3 {
     margin-bottom: 1rem;
     font-size: 1.25rem;
+    font-weight: bold; /* Make section titles stand out more */
+    letter-spacing: 0.5px;
 }
 
 .social-links {
@@ -394,16 +405,43 @@ body {
     color: white;
     font-size: 1.5rem;
     transition: var(--transition);
+    padding: 0.5rem; /* Add some padding to make the icons more clickable */
+    border-radius: 50%; /* Make the social icons round */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background to make the icons pop */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-links a:hover {
     color: var(--primary-color);
+    background-color: var(--primary-color); /* Add hover background effect */
 }
 
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.875rem; /* Make the text slightly smaller for better footer aesthetics */
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: flex-end; /* Align the contact section to the right */
+    gap: 1rem;
+    margin-top: 1.5rem; /* Add spacing above the contact section */
+}
+
+.footer-contact a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contact a:hover {
+    color: var(--primary-color); /* Hover effect for links */
 }
 
 
