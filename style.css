@@ -32,6 +32,10 @@ body {
     margin: 0 auto;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 /* Enhanced Header with Glassmorphism Effect */
 .header {
     position: fixed;
@@ -448,29 +452,27 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block;
-        font-size: 1.5rem;
-        color: white;
-        cursor: pointer;
+        display: flex; /* Show the menu toggle button */
     }
 
     .nav-links {
-        position: fixed;
-        top: 80px;
-        left: 0;
-        width: 100%;
-        background: var(--bg-dark);
+        display: none; /* Hide the nav links by default */
         flex-direction: column;
-        padding: 2rem;
-        gap: 1rem;
-        transform: translateY(-100%);
-        opacity: 0;
-        transition: var(--transition);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #ffffffaf;
+        padding: 10px;
+        width: 200px;
+        border-radius: 5px;
     }
 
-    .nav-links.active {
-        transform: translateY(0);
-        opacity: 1;
+    .nav-links.show {
+        display: flex; /* Show the nav links when 'show' class is added */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
     }
 
     .about-content {
