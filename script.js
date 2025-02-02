@@ -10,7 +10,7 @@ menuToggle.addEventListener("click", () => {
 });
 
 // Close the nav menu when any nav link is clicked
-navItems.forEach(item => {
+navItems.forEach((item) => {
   item.addEventListener("click", () => {
     navLinks.classList.remove("show");
     console.log("Menu closed after link clicked"); // Debugging: Ensure menu closes
