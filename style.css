@@ -138,16 +138,17 @@ body {
 
 .profile-picture {
   width: 100%;
-  max-width: 350px; /* Reduced the maximum width of the profile picture */
-  height: auto;
-  border-radius: 1rem;
+  max-width: 350px;
+  aspect-ratio: 1 / 1; /* Ensures the image is square */
+  border-radius: 50%; /* Makes it circular */
+  object-fit: cover; /* Ensures image fits the circle nicely */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transition: var(--transition);
   margin-top: 3.5rem;
 }
 
 .profile-picture:hover {
-  transform: translateY(-8px); /* Slightly reduced hover effect */
+  transform: translateY(-8px);
 }
 
 .about-text h1 {
