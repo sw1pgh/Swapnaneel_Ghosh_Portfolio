@@ -151,6 +151,12 @@ body {
   transform: translateY(-8px);
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .about-text h1 {
   font-size: clamp(1.8rem, 5vw, 2.6rem); /* Reduced font size */
   margin-bottom: 1rem;
